@@ -1,46 +1,29 @@
 /**
  * 👑 QUEEN BELLA MD V3 - LOADER
- * Downloads the REAL bot from PRIVATE repo
+ * ✅ NOW WORKS WITH PUBLIC REPO
+ * ✅ NO TOKEN NEEDED!
  */
 
 const https = require('https');
 
 // ==========================================
-// 🔒 PRIVATE REPO URL
+// 🔓 PUBLIC REPO URL (NO TOKEN)
 // ==========================================
 
-const BOT_URL = 'https://api.github.com/repos/queenbellabots-cloud/Queen-bella-core/contents/bot.js';
-
-// ✅ YOUR NEW GITHUB TOKEN
-const GITHUB_TOKEN = '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';
+const BOT_URL = 'https://raw.githubusercontent.com/queenbellabots-cloud/Queen-bella-core/main/bot.js';
 
 // ==========================================
-// 📥 DOWNLOAD FROM PRIVATE REPO
+// 📥 DOWNLOAD AND EXECUTE
 // ==========================================
 
 function loadBot() {
     console.log('👑 Loading QUEEN BELLA MD V3...');
-    console.log('🔒 Accessing private repository...\n');
+    console.log('🔓 Accessing public repository...\n');
     
-    const options = {
-        headers: {
-            'Authorization': `token ${GITHUB_TOKEN}`,
-            'Accept': 'application/vnd.github.v3.raw',
-            'User-Agent': 'QUEEN-BELLA-MD-V3'
-        }
-    };
-    
-    https.get(BOT_URL, options, (res) => {
+    https.get(BOT_URL, (res) => {
         let data = '';
         
         console.log(`📡 Status: ${res.statusCode}`);
-        
-        if (res.statusCode === 401 || res.statusCode === 403) {
-            console.log('❌ Authentication failed!');
-            console.log('📌 Make sure you checked the "repo" box when creating the token');
-            console.log('📌 Token must start with ghp_');
-            return;
-        }
         
         if (res.statusCode === 404) {
             console.log('❌ File not found!');
