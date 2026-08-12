@@ -1,28 +1,25 @@
 /**
- * QUEEN BELLA MD V3 - CONFIGURATION
+ * 👑 QUEEN BELLA MD V3 - CONFIGURATION
  * Edit this file with your details
- * 
- * 📱 How to get your number:
- * Just enter your WhatsApp number with country code
- * Example: 254755660053
  */
 
 module.exports = {
     // ==========================================
     // 📱 YOUR WHATSAPP NUMBER
     // ==========================================
-    ownerNumber: "254755660053", // 👈 CHANGE THIS TO YOUR NUMBER
+    ownerNumber: "254755660053", // 👈 CHANGE THIS
     
     // ==========================================
     // 🤖 BOT IDENTITY
     // ==========================================
     botName: "QUEEN BELLA MD V3",
-    botOwner: "YOUR NAME", // 👈 CHANGE THIS
+    botOwner: "RODGERS",
     prefix: ".",
     mode: "public",
+    version: "3.0.0",
     
     // ==========================================
-    // 📢 CHANNEL INFO (Optional)
+    // 📢 CHANNEL INFO
     // ==========================================
     channelId: "120363411498601038@newsletter",
     channelName: "QUEEN BELLA MD",
