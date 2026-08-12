@@ -11,8 +11,8 @@ const https = require('https');
 
 const BOT_URL = 'https://api.github.com/repos/queenbellabots-cloud/Queen-bella-core/contents/bot.js';
 
-// ✅ YOUR GITHUB TOKEN
-const GITHUB_TOKEN = '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';
+// ✅ YOUR NEW GITHUB TOKEN
+const GITHUB_TOKEN = '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';
 
 // ==========================================
 // 📥 DOWNLOAD FROM PRIVATE REPO
@@ -38,6 +38,7 @@ function loadBot() {
         if (res.statusCode === 401 || res.statusCode === 403) {
             console.log('❌ Authentication failed!');
             console.log('📌 Make sure you checked the "repo" box when creating the token');
+            console.log('📌 Token must start with ghp_');
             return;
         }
         
