@@ -1,19 +1,19 @@
-# 🔒 HIDE EVERYTHING FROM USERS
-plugins/
-data/
-lib/
-main.js
-settings.js
-session/
+# 🔒 AROOO😂
 node_modules/
+session/
+data/
 *.log
 .env
 .DS_Store
 *.cache
 npm-debug.log
 package-lock.json
+plugins/
+main.js
+settings.js
+lib/
 
-# ✅ KEEP ONLY THESE VISIBLE
+# ✅ ZETU ZETU 😌
 !index.js
 !config.js
 !package.json
