@@ -10,9 +10,9 @@ const chalk = require('chalk');
 
 console.log(chalk.cyan(`
 ╔═══════════════════════════════════════╗
-║   👑 QUEEN BELLA MD V3               ║
-║   🔒 Protected Version               ║
-║   Created by Dev RODGERS             ║
+║             QUEEN BELLA MD V3               
+║                𝖠𝗏𝖾𝗌 𝖬𝖺𝗌𝗍𝖾𝗋
+║             𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 RODGERS             
 ╚═══════════════════════════════════════╝
 `));
 
