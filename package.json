@@ -1,4 +1,3 @@
-cat > /home/container/package.json << 'EOF'
 {
   "name": "queen-bella-md-v3",
   "version": "3.0.0",
@@ -18,4 +17,3 @@ cat > /home/container/package.json << 'EOF'
   "author": "RODGERS",
   "license": "UNLICENSED"
 }
-EOF
